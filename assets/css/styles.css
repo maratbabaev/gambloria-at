@@ -107,27 +107,30 @@ header .container {
 }
 .header__left__menu li {
   height: 100%;
+}
+.header__left__menu li:nth-child(1) a {
+  border-radius: 16px;
+  background: #721cdd;
+  color: #ffffff;
+}
+.header__left__menu li:nth-child(1) a svg path {
+  fill: #ffffff;
+}
+.header__left__menu li:last-child a {
+  padding: 0 12px 0 8px;
+}
+.header__left__menu li a {
+  height: 100%;
   color: #9682ae;
   font-size: 12px;
   font-weight: 600;
   display: flex;
   align-items: center;
   gap: 4px;
-  padding: 0 12px 0 8px;
+  padding: 0 8px 0 8px;
 }
-.header__left__menu li svg path {
+.header__left__menu li a svg path {
   fill: #9c9ca6;
-}
-.header__left__menu li:nth-child(1) {
-  border-radius: 16px;
-  background: #721cdd;
-  color: #ffffff;
-}
-.header__left__menu li:nth-child(1) svg path {
-  fill: #ffffff;
-}
-.header__left__menu li:nth-child(2) {
-  padding: 0 14px 0 12px;
 }
 
 .header__right {
@@ -328,7 +331,7 @@ header .container {
   font-weight: 600;
   font-size: 14px;
 }
-.banner__content a {
+.banner__content div:nth-child(3) {
   background: #80ff00;
   width: -moz-max-content;
   width: max-content;
@@ -1004,6 +1007,9 @@ footer {
     width: 50%;
     justify-content: center;
   }
+  .mobile-header .header__left__menu li a {
+    justify-content: center;
+  }
   .mobile-header__row {
     display: flex;
     align-items: center;
@@ -1021,7 +1027,6 @@ footer {
     background: #721cdd;
   }
   .banner {
-    aspect-ratio: 343/147;
     width: 90vw;
     min-width: 90vw;
     padding: 12px;
@@ -1095,7 +1100,7 @@ footer {
     background: #3c0f76;
     border-radius: 16px 16px 0 0;
   }
-  .mobile-menu div {
+  .mobile-menu a {
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -1106,13 +1111,13 @@ footer {
     font-weight: 600;
     color: #85858f;
   }
-  .mobile-menu div:nth-child(1) {
+  .mobile-menu a:nth-child(1) {
     color: #99ff33;
   }
-  .mobile-menu div:nth-child(1) svg path {
+  .mobile-menu a:nth-child(1) svg path {
     fill: #99ff33;
   }
-  .mobile-menu div:nth-child(3) span:nth-child(1) {
+  .mobile-menu a:nth-child(3) span:nth-child(1) {
     box-shadow: 0px 2px 7px -1px #80ff00, 0 -4px 8px 0 rgba(0, 0, 0, 0.2392156863), 0 0 1px 0 rgba(0, 0, 0, 0.3215686275);
     border-radius: 50%;
     background: #80ff00;
@@ -1123,13 +1128,13 @@ footer {
     margin-top: -20px;
     width: 44px;
   }
-  .mobile-menu div:nth-child(3) span:nth-child(1) svg {
+  .mobile-menu a:nth-child(3) span:nth-child(1) svg {
     width: 20px;
   }
-  .mobile-menu div:nth-child(3) span:nth-child(1) svg path {
+  .mobile-menu a:nth-child(3) span:nth-child(1) svg path {
     fill: #4e9c01;
   }
-  .mobile-menu div svg {
+  .mobile-menu a svg {
     width: 24px;
   }
   footer {
